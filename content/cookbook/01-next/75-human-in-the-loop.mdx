@@ -109,7 +109,7 @@ To add a HITL step, you add an approval gate between the tool call and the tool 
 
 Add `needsApproval: true` to the tool definition. The tool keeps its `execute` function, but the SDK pauses execution until the user approves.
 
-```ts filename="app/api/chat/route.ts" highlight="14"
+```ts filename="app/api/chat/route.ts" highlight="15"
 import { streamText, tool } from 'ai';
 import { openai } from '@ai-sdk/openai';
 import { z } from 'zod';
